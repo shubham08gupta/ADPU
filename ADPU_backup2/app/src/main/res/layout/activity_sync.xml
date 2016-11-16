@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cmos.adpu.SyncActivity">
+    <TextView
+        android:id="@+id/sync_collection"
+        android:text="Collections"
+        android:textSize="@dimen/text_size_afm"
+        android:background="@drawable/btn_focused"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/sync_member"
+        android:layout_below="@+id/sync_collection"
+        android:text="Members"
+        android:textSize="@dimen/text_size_afm"
+        android:background="@drawable/btn_unfocused"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/sync_rate"
+        android:layout_below="@+id/sync_member"
+        android:text="Rate_Chart"
+        android:textSize="@dimen/text_size_afm"
+        android:background="@drawable/btn_unfocused"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/sync_setting"
+        android:layout_below="@+id/sync_rate"
+        android:text="Settings"
+        android:textSize="@dimen/text_size_afm"
+        android:background="@drawable/btn_unfocused"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_ll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/timer_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip"
+        android:textSize="0.0sp" />
+
+    <LinearLayout
+        android:id="@+id/sno_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_margin"
+        android:orientation="horizontal"
+        android:weightSum="300.0">
+
+        <TextView
+            android:id="@+id/sno_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="100.0"
+            android:text="@string/sno_label"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sno_et"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="200.0"
+            android:gravity="end"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/name_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_margin"
+        android:orientation="horizontal"
+        android:weightSum="300.0">
+
+        <TextView
+            android:id="@+id/name_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="200.0"
+            android:text="@string/name_label"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/name_et"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="100.0"
+            android:gravity="end"
+            android:text="Farmer Name"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/code_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_margin"
+        android:orientation="horizontal"
+        android:weightSum="300.0">
+
+        <TextView
+            android:id="@+id/code_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="100.0"
+            android:text="@string/code_label"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/code_et"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="200.0"
+            android:background="@drawable/focused"
+            android:gravity="end"
+            android:inputType="number"
+            android:text="@string/code_hint"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/weight_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_margin"
+        android:orientation="horizontal"
+        android:weightSum="300.0">
+
+        <TextView
+            android:id="@+id/weight_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="100.0"
+            android:text="@string/weight_label"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/weight_et"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="200.0"
+            android:digits="@string/added_water_hint"
+            android:background="@drawable/unfocused"
+            android:gravity="end"
+            android:hint="@string/weight_hint"
+            android:inputType="numberDecimal"
+            android:textColor="#000000"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fat_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_margin"
+        android:orientation="horizontal"
+        android:weightSum="300.0">
+
+        <TextView
+            android:id="@+id/fat_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="100.0"
+            android:text="@string/fat_label"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/fat_et"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="200.0"
+            android:background="@drawable/unfocused"
+            android:gravity="end"
+            android:hint="@string/fat_hint"
+            android:inputType="numberDecimal"
+            android:textColor="#000000"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/snf_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_margin"
+        android:orientation="horizontal"
+        android:weightSum="300.0">
+
+        <TextView
+            android:id="@+id/snf_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="100.0"
+            android:text="@string/snf_label"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/snf_et"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="200.0"
+            android:background="@drawable/unfocused"
+            android:gravity="end"
+            android:hint="@string/snf_hint"
+            android:inputType="numberDecimal"
+            android:textColor="#000000"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/added_water_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_margin"
+        android:orientation="horizontal"
+        android:weightSum="300.0">
+
+        <TextView
+            android:id="@+id/added_water_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="100.0"
+            android:text="@string/added_water_label"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/added_water_et"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="200.0"
+            android:background="@drawable/unfocused"
+            android:enabled="false"
+            android:gravity="end"
+            android:hint="@string/added_water_hint"
+            android:inputType="none"
+            android:textColor="#000000"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rate_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_margin"
+        android:orientation="horizontal"
+        android:weightSum="300.0">
+
+        <TextView
+            android:id="@+id/rate_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="100.0"
+            android:text="@string/rate_label"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/rate_et"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="200.0"
+            android:background="@drawable/unfocused"
+            android:enabled="false"
+            android:gravity="end"
+            android:inputType="none"
+            android:text="@string/rate_text"
+            android:textColor="#000000"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/amount_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_margin"
+        android:orientation="horizontal"
+        android:weightSum="300.0">
+
+        <TextView
+            android:id="@+id/amount_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="100.0"
+            android:text="@string/amount_label"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/amount_et"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="200.0"
+            android:background="@drawable/unfocused"
+            android:enabled="false"
+            android:gravity="end"
+            android:inputType="none"
+            android:text="@string/amount_text"
+            android:textColor="#000000"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/print_entered_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:background="#77008000"
+        android:text="Press Enter"
+        android:textSize="@dimen/text_size" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="150.0">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50.0"
+            android:text="Button1" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50.0"
+            android:text="Button2" />
+
+        <EditText
+            android:id="@+id/pass"
+            android:enabled="true"
+            android:inputType="numberPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50.0" />
+    </LinearLayout>
+</LinearLayout>

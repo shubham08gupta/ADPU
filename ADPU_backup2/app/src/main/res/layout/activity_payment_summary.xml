@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cmos.adpu.PaymentSummaryActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/ps_date_ll"
+        android:background="#ffcccccc"
+        android:padding="5.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="11.2">
+        <EditText
+            android:enabled="false"
+            android:textSize="@dimen/text_size"
+            android:textColor="#ff000000"
+            android:gravity="center"
+            android:id="@+id/ps_day1"
+            android:background="@drawable/focused"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+        <TextView
+            android:textSize="@dimen/text_size"
+            android:gravity="center"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/date_separator"
+            android:layout_weight="0.6" />
+        <EditText
+            android:enabled="false"
+            android:textSize="@dimen/text_size"
+            android:textColor="#ff000000"
+            android:gravity="center"
+            android:id="@+id/ps_month1"
+            android:background="@drawable/unfocused"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+        <TextView
+            android:textSize="@dimen/text_size"
+            android:gravity="center"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/date_separator"
+            android:layout_weight="0.6" />
+        <EditText
+            android:enabled="false"
+            android:textSize="@dimen/text_size"
+            android:textColor="#ff000000"
+            android:gravity="center"
+            android:id="@+id/ps_year1"
+            android:background="@drawable/unfocused"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.0" />
+        <DatePicker
+            android:id="@+id/ps_date1_dp"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:calendarViewShown="false" />
+        <TextView
+            android:textSize="@dimen/text_size"
+            android:gravity="center"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:layout_weight="0.6" />
+        <EditText
+            android:enabled="false"
+            android:textSize="@dimen/text_size"
+            android:textColor="#ff000000"
+            android:gravity="center"
+            android:id="@+id/ps_day2"
+            android:background="@drawable/unfocused"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+        <TextView
+            android:textSize="@dimen/text_size"
+            android:gravity="center"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/date_separator"
+            android:layout_weight="0.6" />
+        <EditText
+            android:enabled="false"
+            android:textSize="@dimen/text_size"
+            android:textColor="#ff000000"
+            android:gravity="center"
+            android:id="@+id/ps_month2"
+            android:background="@drawable/unfocused"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+        <TextView
+            android:textSize="@dimen/text_size"
+            android:gravity="center"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/date_separator"
+            android:layout_weight="0.6" />
+        <EditText
+            android:enabled="false"
+            android:textSize="@dimen/text_size"
+            android:textColor="#ff000000"
+            android:gravity="center"
+            android:id="@+id/ps_year2"
+            android:background="@drawable/unfocused"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.0" />
+        <DatePicker
+            android:id="@+id/ps_date2_dp"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:calendarViewShown="false" />
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/scrollView_ps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ps_date_ll">
+        <TableLayout
+            android:id="@+id/printable_text_tb_ps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TableLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/print_preview_ps"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scrollView_ps" />
+    <TextView
+        android:id="@+id/test_tv"
+        android:layout_below="@+id/print_preview_ps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cmos.adpu.DeviceInfoActivity">
+
+    <LinearLayout
+        android:id="@+id/s_dairycode_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffeeeeee"
+        android:orientation="horizontal"
+        android:padding="5.0dip"
+        android:weightSum="2.0">
+
+        <TextView
+            android:id="@+id/s_dairycode_tv"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:labelFor="@+id/s_dairycode_et"
+            android:text="@string/dairycode"
+            android:textSize="@dimen/text_size" />
+
+        <EditText
+            android:id="@+id/s_dairycode_et"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/focused"
+            android:inputType="textCapWords"
+            android:maxLength="3"
+            android:singleLine="true"
+            android:textColor="#ff000000"
+            android:textSize="@dimen/text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/s_routecode_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/s_dairycode_ll"
+        android:background="#ffeeeeee"
+        android:orientation="horizontal"
+        android:padding="5.0dip"
+        android:weightSum="2.0">
+
+        <TextView
+            android:id="@+id/s_routecode_tv"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:labelFor="@+id/s_routecode_et"
+            android:text="@string/routecode"
+            android:textSize="@dimen/text_size" />
+
+        <EditText
+            android:id="@+id/s_routecode_et"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/unfocused"
+            android:enabled="false"
+            android:inputType="number"
+            android:maxLength="3"
+            android:singleLine="true"
+            android:textColor="#ff000000"
+            android:textSize="@dimen/text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/s_village_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/s_routecode_ll"
+        android:background="#ffeeeeee"
+        android:orientation="horizontal"
+        android:padding="5.0dip"
+        android:weightSum="2.0">
+
+        <TextView
+            android:id="@+id/s_village_tv"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:labelFor="@+id/s_village_et"
+            android:text="@string/villagecode"
+            android:textSize="@dimen/text_size" />
+
+        <EditText
+            android:id="@+id/s_village_et"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/unfocused"
+            android:enabled="false"
+            android:inputType="number"
+            android:maxLength="3"
+            android:singleLine="true"
+            android:textColor="#ff000000"
+            android:textSize="@dimen/text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/s_center_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/s_village_ll"
+        android:background="#ffeeeeee"
+        android:orientation="horizontal"
+        android:padding="5.0dip"
+        android:weightSum="2.0">
+
+        <TextView
+            android:id="@+id/s_center_tv"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:labelFor="@+id/s_center_et"
+            android:text="@string/centercode"
+            android:textSize="@dimen/text_size" />
+
+        <EditText
+            android:id="@+id/s_center_et"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/unfocused"
+            android:enabled="false"
+            android:inputType="number"
+            android:maxLength="3"
+            android:singleLine="true"
+            android:textColor="#ff000000"
+            android:textSize="@dimen/text_size" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/s_save_d"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/s_center_ll"
+        android:text="Press Enter to Save" />
+</RelativeLayout>

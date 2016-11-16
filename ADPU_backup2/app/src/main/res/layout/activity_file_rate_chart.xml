@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frc_listitem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    tools:context="com.cmos.adpu.FileRateChartActivity">
+
+    <TextView
+        android:id="@+id/frc_name_tv"
+        android:layout_weight="1"
+        android:textSize="@dimen/text_size"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/frc_data_tv"
+        android:layout_weight="1"
+        android:textSize="@dimen/text_size"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+</LinearLayout>

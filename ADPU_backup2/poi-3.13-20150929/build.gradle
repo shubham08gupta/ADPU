@@ -1,0 +1,4 @@
+configurations.create("default")
+artifacts.add("default", file('poi-3.13-20150929.jar'))
+dependencies {
+}

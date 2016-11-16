@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cmos.adpu.MemberLedgerActivity">
+
+    <LinearLayout
+        android:id="@+id/ml_date_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffcccccc"
+        android:orientation="horizontal"
+        android:padding="5.0dip"
+        android:weightSum="13.8">
+
+        <EditText
+            android:id="@+id/ml_day1"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/focused"
+            android:enabled="false"
+            android:gravity="center"
+            android:inputType="number"
+            android:textColor="#ff000000"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:text="@string/date_separator"
+            android:textSize="@dimen/text_size" />
+
+        <EditText
+            android:id="@+id/ml_month1"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/unfocused"
+            android:enabled="false"
+            android:gravity="center"
+            android:inputType="number"
+            android:textColor="#ff000000"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:text="@string/date_separator"
+            android:textSize="@dimen/text_size" />
+
+        <EditText
+            android:id="@+id/ml_year1"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.0"
+            android:background="@drawable/unfocused"
+            android:enabled="false"
+            android:gravity="center"
+            android:inputType="number"
+            android:textColor="#ff000000"
+            android:textSize="@dimen/text_size" />
+
+        <DatePicker
+            android:id="@+id/ml_date1_dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:calendarViewShown="false"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:text="-"
+            android:textSize="@dimen/text_size" />
+
+        <EditText
+            android:id="@+id/ml_day2"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/unfocused"
+            android:enabled="false"
+            android:gravity="center"
+            android:inputType="number"
+            android:textColor="#ff000000"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:text="@string/date_separator"
+            android:textSize="@dimen/text_size" />
+
+        <EditText
+            android:id="@+id/ml_month2"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/unfocused"
+            android:enabled="false"
+            android:gravity="center"
+            android:inputType="number"
+            android:textColor="#ff000000"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:text="@string/date_separator"
+            android:textSize="@dimen/text_size" />
+
+        <EditText
+            android:id="@+id/ml_year2"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.0"
+            android:background="@drawable/unfocused"
+            android:enabled="false"
+            android:gravity="center"
+            android:inputType="number"
+            android:textColor="#ff000000"
+            android:textSize="@dimen/text_size" />
+
+        <DatePicker
+            android:id="@+id/ml_date2_dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:calendarViewShown="false"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:textSize="@dimen/text_size" />
+
+        <EditText
+            android:id="@+id/ml_code"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.0"
+            android:background="@drawable/unfocused"
+            android:enabled="false"
+            android:gravity="center"
+            android:hint="Code"
+            android:inputType="number"
+            android:textColor="#ff000000"
+            android:textSize="@dimen/text_size" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView_ml"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ml_date_ll">
+
+        <TableLayout
+            android:id="@+id/printable_text_tb_ml"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/print_preview_ml"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scrollView_ml" />
+
+    <EditText
+        android:id="@+id/asdf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/print_preview_ml" />
+</RelativeLayout>

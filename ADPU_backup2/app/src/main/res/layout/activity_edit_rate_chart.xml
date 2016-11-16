@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cmos.adpu.EditRateChartActivity">
+
+    <LinearLayout
+        android:id="@+id/erc_label_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFCCCCCC"
+        android:weightSum="9.0">
+        <TextView
+            android:layout_weight="5.6"
+            android:textSize="@dimen/text_size"
+            android:text="Activation Date"
+            android:gravity="center"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_weight="3.0"
+            android:textSize="@dimen/text_size"
+            android:text="Type"
+            android:gravity="center"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/erc_date_ll"
+        android:layout_below="@+id/erc_label_ll"
+        android:background="#ffeeeeee"
+        android:padding="5.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="9.0">
+        <EditText
+            android:enabled="false"
+            android:textSize="@dimen/text_size"
+            android:textColor="#ff000000"
+            android:gravity="center"
+            android:id="@+id/day_erc"
+            android:background="@drawable/focused"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+        <TextView
+            android:textSize="@dimen/text_size"
+            android:gravity="center"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/date_separator"
+            android:layout_weight="0.6" />
+        <EditText
+            android:enabled="false"
+            android:textSize="@dimen/text_size"
+            android:textColor="#ff000000"
+            android:gravity="center"
+            android:id="@+id/month_erc"
+            android:background="@drawable/unfocused"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+        <TextView
+            android:textSize="@dimen/text_size"
+            android:gravity="center"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/date_separator"
+            android:layout_weight="0.6" />
+        <EditText
+            android:enabled="false"
+            android:textSize="@dimen/text_size"
+            android:textColor="#ff000000"
+            android:gravity="center"
+            android:id="@+id/year_erc"
+            android:background="@drawable/unfocused"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.0" />
+        <DatePicker
+            android:id="@+id/erc_date_dp"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:calendarViewShown="false" />
+        <TextView
+            android:textSize="@dimen/text_size"
+            android:gravity="center"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6" />
+        <EditText
+            android:enabled="false"
+            android:textSize="@dimen/text_size"
+            android:textColor="#ff000000"
+            android:layout_weight="3.0"
+            android:id="@+id/select_type_erc"
+            android:gravity="center"
+            android:background="@drawable/unfocused"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/erc_info_btn"
+        android:layout_below="@+id/erc_date_ll"
+        android:background="@drawable/btn_unfocused"
+        android:text="Press Enter to Save and Proceed."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <FrameLayout
+        android:id="@+id/erc_frame"
+        android:layout_below="@+id/erc_info_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </FrameLayout>
+</RelativeLayout>

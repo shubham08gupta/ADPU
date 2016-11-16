@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.cmos.adpu.FatSnfRangeActivity">
+    <LinearLayout
+        android:id="@+id/fsr_header"
+        android:background="@drawable/settings_header_bg"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <TextView
+            android:layout_marginTop="-15dp"
+            android:text="Fat SNF Range"
+            android:textColor="#FFFFFF"
+            android:textSize="36sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:layout_below="@+id/fsr_header"
+        android:id="@+id/fsr_cow_title"
+        android:layout_marginLeft="10dp"
+        android:textSize="24sp"
+        android:text="@string/cow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:id="@+id/fsr_cow_rl"
+        android:layout_below="@+id/fsr_cow_title"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:background="@drawable/unfocused"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/fsr_cow_fat_range_ll"
+            android:background="#ffeeeeee"
+            android:padding="5.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4.0">
+            <TextView
+                android:textSize="@dimen/text_size"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@+id/fsr_cow_fat_range_tv"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/fat_label"
+                android:layout_weight="1.0" />
+            <TextView
+                android:textSize="@dimen/text_size"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <EditText
+                android:enabled="false"
+                android:textSize="@dimen/text_size"
+                android:textColor="#ff000000"
+                android:gravity="center"
+                android:id="@+id/fsr_cow_fat_range_from_et"
+                android:background="@drawable/unfocused"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75" />
+            <TextView
+                android:textSize="@dimen/text_size"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/range_separator"
+                android:layout_weight="0.5" />
+            <EditText
+                android:enabled="false"
+                android:textSize="@dimen/text_size"
+                android:textColor="#ff000000"
+                android:gravity="center"
+                android:id="@+id/fsr_cow_fat_range_to_et"
+                android:background="@drawable/unfocused"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/fsr_cow_snf_range_ll"
+            android:layout_below="@+id/fsr_cow_fat_range_ll"
+            android:background="#ffcccccc"
+            android:padding="5.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4.0">
+            <TextView
+                android:textSize="@dimen/text_size"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@+id/fsr_cow_snf_fat_range_tv"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/snf_label"
+                android:layout_weight="1.0" />
+            <TextView
+                android:textSize="@dimen/text_size"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <EditText
+                android:enabled="false"
+                android:textSize="@dimen/text_size"
+                android:textColor="#ff000000"
+                android:gravity="center"
+                android:id="@+id/fsr_cow_snf_range_from_et"
+                android:background="@drawable/unfocused"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75" />
+            <TextView
+                android:textSize="@dimen/text_size"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/range_separator"
+                android:layout_weight="0.5" />
+            <EditText
+                android:enabled="false"
+                android:textSize="@dimen/text_size"
+                android:textColor="#ff000000"
+                android:gravity="center"
+                android:id="@+id/fsr_cow_snf_range_to_et"
+                android:background="@drawable/unfocused"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75" />
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView
+        android:layout_below="@+id/fsr_cow_rl"
+        android:id="@+id/fsr_buffalo_title"
+        android:layout_marginLeft="10dp"
+        android:textSize="24sp"
+        android:text="@string/buffalo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:id="@+id/fsr_buffalo_rl"
+        android:layout_below="@+id/fsr_buffalo_title"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:background="@drawable/unfocused"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/fsr_buffalo_fat_range_ll"
+            android:background="#ffeeeeee"
+            android:padding="5.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4.0">
+            <TextView
+                android:textSize="@dimen/text_size"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@+id/fsr_buffalo_fat_range_tv"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/fat_label"
+                android:layout_weight="1.0" />
+            <TextView
+                android:textSize="@dimen/text_size"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <EditText
+                android:enabled="false"
+                android:textSize="@dimen/text_size"
+                android:textColor="#ff000000"
+                android:gravity="center"
+                android:id="@+id/fsr_buffalo_fat_range_from_et"
+                android:background="@drawable/unfocused"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75" />
+            <TextView
+                android:textSize="@dimen/text_size"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/range_separator"
+                android:layout_weight="0.5" />
+            <EditText
+                android:enabled="false"
+                android:textSize="@dimen/text_size"
+                android:textColor="#ff000000"
+                android:gravity="center"
+                android:id="@+id/fsr_buffalo_fat_range_to_et"
+                android:background="@drawable/unfocused"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/fsr_buffalo_snf_range_ll"
+            android:layout_below="@+id/fsr_buffalo_fat_range_ll"
+            android:background="#ffcccccc"
+            android:padding="5.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4.0">
+            <TextView
+                android:textSize="@dimen/text_size"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@+id/fsr_snf_fat_range_tv"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/snf_label"
+                android:layout_weight="1.0" />
+            <TextView
+                android:textSize="@dimen/text_size"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <EditText
+                android:enabled="false"
+                android:textSize="@dimen/text_size"
+                android:textColor="#ff000000"
+                android:gravity="center"
+                android:id="@+id/fsr_buffalo_snf_range_from_et"
+                android:background="@drawable/unfocused"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75" />
+            <TextView
+                android:textSize="@dimen/text_size"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/range_separator"
+                android:layout_weight="0.5" />
+            <EditText
+                android:enabled="false"
+                android:textSize="@dimen/text_size"
+                android:textColor="#ff000000"
+                android:gravity="center"
+                android:id="@+id/fsr_buffalo_snf_range_to_et"
+                android:background="@drawable/unfocused"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

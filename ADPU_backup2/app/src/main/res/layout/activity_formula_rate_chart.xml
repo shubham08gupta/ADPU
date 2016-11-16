@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cmos.adpu.FormulaRateChartActivity">
+    <TextView android:textSize="0.0sp"
+        android:id="@+id/timer_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/frc_std_cow_rate_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_margin"
+        android:weightSum="300.0">
+        <TextView
+            android:textSize="@dimen/text_size_ml"
+            android:textStyle="bold"
+            android:id="@+id/frc_std_cow_rate_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Std. Cow Rate"
+            android:layout_weight="100.0" />
+        <EditText
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:enabled="false"
+            android:textSize="@dimen/text_size_ml"
+            android:textStyle="bold"
+            android:gravity="end"
+            android:id="@+id/frc_std_cow_rate_et"
+            android:background="@drawable/focused"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="0.0"
+            android:layout_weight="200.0"
+            android:inputType="none" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/frc_per_cow_fat_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_margin"
+        android:weightSum="300.0">
+        <TextView
+            android:textSize="@dimen/text_size_ml"
+            android:textStyle="bold"
+            android:id="@+id/frc_per_cow_fat_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="% Cow Fat"
+            android:layout_weight="100.0" />
+        <EditText
+            android:textColor="#000000"
+            android:textColorHint="#FFFFFF"
+            android:enabled="false"
+            android:textSize="@dimen/text_size_ml"
+            android:textStyle="bold"
+            android:gravity="end"
+            android:id="@+id/frc_per_cow_fat_et"
+            android:background="@drawable/unfocused"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_weight="200.0"
+            android:inputType="none" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/frc_std_cow_fat_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_margin"
+        android:weightSum="300.0">
+        <TextView
+            android:textSize="@dimen/text_size_ml"
+            android:textStyle="bold"
+            android:id="@+id/frc_std_cow_fat_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Std. Cow Fat"
+            android:layout_weight="100.0" />
+        <EditText
+            android:textColor="#000000"
+            android:textColorHint="#FFFFFF"
+            android:enabled="false"
+            android:textSize="@dimen/text_size_ml"
+            android:textStyle="bold"
+            android:gravity="end"
+            android:id="@+id/frc_std_cow_fat_et"
+            android:background="@drawable/unfocused"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="0.0"
+            android:layout_weight="200.0"
+            android:inputType="none" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/frc_per_cow_snf_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_margin"
+        android:weightSum="300.0">
+        <TextView
+            android:textSize="@dimen/text_size_ml"
+            android:textStyle="bold"
+            android:id="@+id/frc_per_cow_snf_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="% Cow SNF"
+            android:layout_weight="100.0" />
+        <EditText
+            android:textColor="#000000"
+            android:textColorHint="#FFFFFF"
+            android:enabled="false"
+            android:textSize="@dimen/text_size_ml"
+            android:textStyle="bold"
+            android:gravity="end"
+            android:id="@+id/frc_per_cow_snf_et"
+            android:background="@drawable/unfocused"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_weight="200.0"
+            android:inputType="none" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/frc_std_cow_snf_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_margin"
+        android:weightSum="300.0">
+        <TextView
+            android:textSize="@dimen/text_size_ml"
+            android:textStyle="bold"
+            android:id="@+id/frc_std_cow_snf_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Std. Cow SNF"
+            android:layout_weight="100.0" />
+        <EditText
+            android:textColor="#000000"
+            android:textColorHint="#FFFFFF"
+            android:enabled="false"
+            android:textSize="@dimen/text_size_ml"
+            android:textStyle="bold"
+            android:gravity="end"
+            android:id="@+id/frc_std_cow_snf_et"
+            android:background="@drawable/unfocused"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="0.0"
+            android:layout_weight="200.0"
+            android:inputType="none" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/frc_std_buffalo_rate_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_margin"
+        android:weightSum="300.0">
+        <TextView
+            android:textSize="@dimen/text_size_ml"
+            android:textStyle="bold"
+            android:id="@+id/frc_std_buffalo_rate_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Std. Buffalo Rate"
+            android:layout_weight="100.0" />
+        <EditText
+            android:textColor="#000000"
+            android:textColorHint="#FFFFFF"
+            android:enabled="false"
+            android:textSize="@dimen/text_size_ml"
+            android:textStyle="bold"
+            android:gravity="end"
+            android:id="@+id/frc_std_buffalo_rate_et"
+            android:background="@drawable/unfocused"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="0.0"
+            android:layout_weight="200.0"
+            android:inputType="none" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/frc_per_buffalo_fat_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_margin"
+        android:weightSum="300.0">
+        <TextView
+            android:textSize="@dimen/text_size_ml"
+            android:textStyle="bold"
+            android:id="@+id/frc_per_buffalo_fat_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="% Buffalo Fat"
+            android:layout_weight="100.0" />
+        <EditText
+            android:textColor="#000000"
+            android:textColorHint="#FFFFFF"
+            android:enabled="false"
+            android:textSize="@dimen/text_size_ml"
+            android:textStyle="bold"
+            android:gravity="end"
+            android:id="@+id/frc_per_buffalo_fat_et"
+            android:background="@drawable/unfocused"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_weight="200.0"
+            android:inputType="none" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/frc_std_buffalo_fat_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_margin"
+        android:weightSum="300.0">
+        <TextView
+            android:textSize="@dimen/text_size_ml"
+            android:textStyle="bold"
+            android:id="@+id/frc_std_buffalo_fat_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Std. Buffalo Fat"
+            android:layout_weight="100.0" />
+        <EditText
+            android:textColor="#000000"
+            android:textColorHint="#FFFFFF"
+            android:enabled="false"
+            android:textSize="@dimen/text_size_ml"
+            android:textStyle="bold"
+            android:gravity="end"
+            android:id="@+id/frc_std_buffalo_fat_et"
+            android:background="@drawable/unfocused"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="0.0"
+            android:layout_weight="200.0"
+            android:inputType="none" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/frc_per_buffalo_snf_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_margin"
+        android:weightSum="300.0">
+        <TextView
+            android:textSize="@dimen/text_size_ml"
+            android:textStyle="bold"
+            android:id="@+id/frc_per_buffalo_snf_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="% Buffalo SNF"
+            android:layout_weight="100.0" />
+        <EditText
+            android:textColor="#000000"
+            android:textColorHint="#FFFFFF"
+            android:enabled="false"
+            android:textSize="@dimen/text_size_ml"
+            android:textStyle="bold"
+            android:gravity="end"
+            android:id="@+id/frc_per_buffalo_snf_et"
+            android:background="@drawable/unfocused"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_weight="200.0"
+            android:inputType="none" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/frc_std_buffalo_snf_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_margin"
+        android:weightSum="300.0">
+        <TextView
+            android:textSize="@dimen/text_size_ml"
+            android:textStyle="bold"
+            android:id="@+id/frc_std_buffalo_snf_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Std. Buffalo SNF"
+            android:layout_weight="100.0" />
+        <EditText
+            android:textColor="#000000"
+            android:textColorHint="#FFFFFF"
+            android:enabled="false"
+            android:textSize="@dimen/text_size_ml"
+            android:textStyle="bold"
+            android:gravity="end"
+            android:id="@+id/frc_std_buffalo_snf_et"
+            android:background="@drawable/unfocused"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="0.0"
+            android:layout_weight="200.0"
+            android:inputType="none" />
+    </LinearLayout>
+    <View
+        android:background="#FF0C0C0C"
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/frc_kg_fat_cow_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_margin"
+        android:weightSum="300.0">
+        <TextView
+            android:textSize="@dimen/text_size_ml"
+            android:textStyle="bold"
+            android:id="@+id/frc_kg_fat_cow_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="KG FAT Cow"
+            android:layout_weight="100.0" />
+        <TextView
+            android:textColor="#000000"
+            android:enabled="false"
+            android:textSize="@dimen/text_size_ml"
+            android:textStyle="bold"
+            android:gravity="end"
+            android:id="@+id/frc_kg_fat_cow_et"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="200.0" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/frc_kg_snf_cow_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_margin"
+        android:weightSum="300.0">
+        <TextView
+            android:textSize="@dimen/text_size_ml"
+            android:textStyle="bold"
+            android:id="@+id/frc_kg_snf_cow_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="KG SNF Cow"
+            android:layout_weight="100.0" />
+        <TextView
+            android:textColor="#000000"
+            android:textSize="@dimen/text_size_ml"
+            android:textStyle="bold"
+            android:gravity="end"
+            android:id="@+id/frc_kg_snf_cow_et"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="200.0" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/frc_kg_fat_buffalo_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_margin"
+        android:weightSum="300.0">
+        <TextView
+            android:textSize="@dimen/text_size_ml"
+            android:textStyle="bold"
+            android:id="@+id/frc_kg_fat_buffalo_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="KG FAT Buffalo"
+            android:layout_weight="100.0" />
+        <TextView
+            android:textColor="#000000"
+            android:textSize="@dimen/text_size_ml"
+            android:textStyle="bold"
+            android:gravity="end"
+            android:id="@+id/frc_kg_fat_buffalo_et"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="200.0" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/frc_kg_snf_buffalo_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_margin"
+        android:weightSum="300.0">
+        <TextView
+            android:textSize="@dimen/text_size_ml"
+            android:textStyle="bold"
+            android:id="@+id/frc_kg_snf_buffalo_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="KG SNF Buffalo"
+            android:layout_weight="100.0" />
+        <TextView
+            android:textColor="#000000"
+            android:textSize="@dimen/text_size_ml"
+            android:textStyle="bold"
+            android:gravity="end"
+            android:id="@+id/frc_kg_snf_buffalo_et"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="200.0" />
+    </LinearLayout>
+    <Button
+        android:text="Press Enter to Save"
+        android:id="@+id/frc_save_btn"
+        android:textSize="@dimen/text_size_ml"
+        android:background="#77008000"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

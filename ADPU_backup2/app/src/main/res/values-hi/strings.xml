@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_clock">00:00</string>
+    <string name="action_settings">सेटिंग्स</string>
+    <string name="added_water_hint">0.00</string>
+    <string name="added_water_label">जोड़ा पानी</string>
+    <string name="amount_label">मात्रा</string>
+    <string name="amount_text">0.00</string>
+    <string name="app_name">ADPU</string>
+    <string name="code_hint">000</string>
+    <string name="code_label">कोड</string>
+    <string name="date_separator">/</string>
+    <string name="fat_hint">0.00</string>
+    <string name="fat_label">वसा</string>
+    <string name="name_label">नाम</string>
+    <string name="rate_label">दर</string>
+    <string name="rate_text">0.00</string>
+    <string name="snf_hint">0.00</string>
+    <string name="snf_label">SNF</string>
+    <string name="sno_label">सीरीयल नम्बर</string>
+    <string name="title_activity_add_farmer_member">AddFarmerMember</string>
+    <string name="title_activity_duplicate_slip">DuplicateSlipActivity</string>
+    <string name="title_activity_member_ledger">MemberLedgerActivity</string>
+    <string name="title_activity_payment_summary">PaymentSummaryActivity</string>
+    <string name="title_activity_print_preview">PrintPreviewActivity</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title_activity_shift_reports">ShiftReportsActivity</string>
+    <string name="weight_hint">0.00</string>
+    <string name="weight_label">वज़न</string>
+    <string name="morning">सुबह</string>
+    <string name="evening">शाम</string>
+    <string name="print_preview">मुद्रण पूर्वावलोकन</string>
+</resources>

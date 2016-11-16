@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cmos.adpu">
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.Light">
+        <activity
+            android:name=".BaseActivity"
+            android:label="@string/app_name"
+            android:launchMode="standard"
+            android:windowSoftInputMode="stateVisible|adjustPan|stateHidden" />
+
+        <service
+            android:name=".BluetoothLeService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".ShiftReportsActivity"
+            android:label="@string/title_activity_shift_reports"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan|stateHidden" />
+        <activity
+            android:name=".PrintPreviewActivity"
+            android:label="@string/title_activity_print_preview"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan|stateHidden" />
+        <activity
+            android:name=".AddFarmerMember"
+            android:label="@string/title_activity_add_farmer_member"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan|stateHidden" />
+        <activity
+            android:name=".MemberLedgerActivity"
+            android:label="@string/title_activity_member_ledger"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan|stateHidden" />
+        <activity
+            android:name=".PaymentSummaryActivity"
+            android:label="@string/title_activity_payment_summary"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan|stateHidden" />
+        <activity
+            android:name=".DuplicateSlipActivity"
+            android:label="@string/title_activity_duplicate_slip"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan|stateHidden" />
+        <activity
+            android:name=".FatSnfRangeActivity"
+            android:label="@string/title_activity_fat_snf_range"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan|stateHidden" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan|stateHidden" />
+        <activity
+            android:name=".AddRateChartActivity"
+            android:label="@string/title_activity_add_rate_chart"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan|stateHidden" />
+        <activity
+            android:name=".AddPriceActivity"
+            android:label="@string/title_activity_add_price"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan|stateHidden" />
+        <activity
+            android:name=".ShowRateChartActivity"
+            android:label="@string/title_activity_show_rate_chart"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan|stateHidden" />
+        <activity
+            android:name=".EditRateChartActivity"
+            android:label="@string/title_activity_edit_rate_chart"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan|stateHidden" />
+        <activity
+            android:name=".ManualRateChartActivity"
+            android:label="@string/title_activity_manual_rate_chart"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan|stateHidden" />
+        <activity
+            android:name=".FileRateChartActivity"
+            android:label="@string/title_activity_file_rate_chart"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan|stateHidden" />
+        <activity
+            android:name=".InitializationActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FormulaRateChartActivity"
+            android:label="@string/title_activity_formula_rate_chart"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan|stateHidden" />
+        <activity
+            android:name=".SyncActivity"
+            android:label="@string/title_activity_sync" />
+        <activity
+            android:name=".DeviceInfoActivity"
+            android:label="@string/title_activity_device_info" />
+        <activity
+            android:name=".ResetPasswordActivity"
+            android:label="@string/title_activity_reset_password" />
+        <activity
+            android:name=".RateChartOnlineActivity"
+            android:label="@string/title_activity_rate_chart_online"></activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

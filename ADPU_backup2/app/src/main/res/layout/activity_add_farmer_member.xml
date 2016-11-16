@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.cmos.adpu.AddFarmerMember">
+
+    <EditText
+        android:id="@+id/code_et_afm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_margin"
+        android:background="@drawable/focused"
+        android:enabled="false"
+        android:hint="Enter Code"
+        android:inputType="none"
+        android:textColor="#000000"
+        android:textSize="@dimen/text_size_afm" />
+
+    <EditText
+        android:id="@+id/name_et_afm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_margin"
+        android:background="@drawable/unfocused"
+        android:hint="Enter Name"
+        android:inputType="none"
+        android:maxLines="1"
+        android:textColor="#000000"
+        android:textSize="@dimen/text_size_afm" />
+
+    <EditText
+        android:id="@+id/mobile_et_afm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_margin"
+        android:background="@drawable/unfocused"
+        android:hint="Enter Mobile Number"
+        android:inputType="none"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:textColor="#000000"
+        android:textSize="@dimen/text_size_afm" />
+
+    <LinearLayout
+        android:id="@+id/email_ll_afm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_margin"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <EditText
+            android:id="@+id/email1_et_afm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/unfocused"
+            android:hint="Enter email"
+            android:inputType="none"
+            android:maxLines="1"
+            android:textColor="#000000"
+            android:textSize="@dimen/text_size_afm" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:text=" @"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/email2_et_afm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:background="@drawable/unfocused"
+            android:hint="gmail.com"
+            android:inputType="none"
+            android:textColor="#000000"
+            android:textSize="@dimen/text_size_afm" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/save_member"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="SAVE"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/upload_from_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload from file" />
+
+</LinearLayout>

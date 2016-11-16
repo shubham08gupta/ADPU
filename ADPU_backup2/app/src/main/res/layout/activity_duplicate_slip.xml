@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cmos.adpu.DuplicateSlipActivity">
+
+    <LinearLayout
+        android:id="@+id/ds_date_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffcccccc"
+        android:orientation="horizontal"
+        android:padding="5.0dp"
+        android:weightSum="12.4">
+
+        <EditText
+            android:id="@+id/ds_code"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.0"
+            android:background="@drawable/focused"
+            android:enabled="false"
+            android:gravity="center"
+            android:hint="Code"
+            android:inputType="number"
+            android:maxLines="1"
+            android:textColor="#ff000000"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:textSize="@dimen/text_size" />
+
+        <EditText
+            android:id="@+id/ds_day"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/unfocused"
+            android:enabled="false"
+            android:gravity="center"
+            android:inputType="number"
+            android:textColor="#ff000000"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:text="@string/date_separator"
+            android:textSize="@dimen/text_size" />
+
+        <EditText
+            android:id="@+id/ds_month"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/unfocused"
+            android:enabled="false"
+            android:gravity="center"
+            android:inputType="number"
+            android:textColor="#ff000000"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:text="@string/date_separator"
+            android:textSize="@dimen/text_size" />
+
+        <EditText
+            android:id="@+id/ds_year"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.0"
+            android:background="@drawable/unfocused"
+            android:enabled="false"
+            android:gravity="center"
+            android:inputType="number"
+            android:textColor="#ff000000"
+            android:textSize="@dimen/text_size" />
+
+        <DatePicker
+            android:id="@+id/ds_date_dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:calendarViewShown="false"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:textSize="@dimen/text_size" />
+
+        <EditText
+            android:id="@+id/ds_shift"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:background="@drawable/unfocused"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="@string/morning"
+            android:textColor="#ff000000"
+            android:textSize="@dimen/text_size" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ds_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ds_date_ll"
+        android:layout_margin="10dp"
+        android:textSize="@dimen/text_size" />
+
+    <Button
+        android:id="@+id/ds_print_preview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ds_result"
+        android:visibility="gone" />
+</RelativeLayout>
